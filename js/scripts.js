@@ -22,3 +22,12 @@ Pizza.prototype.price = function() {
   pizzaPrice = sizePrice + toppingPrice;
   return pizzaPrice;
 }
+
+// had some help here to figure out how to get the array pushing properly
+var getToppings = function() {
+  var allToppings = [];
+  $(".regular:checked").each(function() {
+    allToppings.push($(this).val());
+  })
+  return allToppings;
+}

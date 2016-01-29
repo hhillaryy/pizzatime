@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
@@ -9,30 +9,47 @@
   </head>
   <body>
     <div class="container">
-      <h1>PIZZA</h1>
-      <h3>Create your pizza using the options below. Hit submit, and we'll calculate your pizza cost!</h3>
+      <h1>Hillary's Gourmet Pizza</h1>
+      <p>Create your pizza by selecting the options below. All pizzas are made with a secret marinara sauce and cheese but you may choose your size and toppings below (regular is 14", large is 18"). Hit submit and we'll let you know the cost of your pizza!</p>
       <form id="pizza-calculator">
-        <div class="form-group">
-          <label for="amount">Size:</label>
-           <select id="amount">
-             <option id="Regular">Regular</option>
-             <option id="Large">Large</option>
-           </select>
-         </div>
-       <div class="form-group">
-         <label for="additional-toppings">Toppings:</label>
-          <select id="time">
-            <option id="1">pepperoni</option>
-            <option id="2">olive</option>
-            <option id="3">garlic</option>
-            <option id="4">sausage</option>
-          </select>
+        <div class="row">
+          <div class="col-md-6">
+          <div id="Size">
+            <h3>Select a size:</h3>
+            <div class="checkbox">
+              <label><input type="checkbox" class="regular" value="regular">regular</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" class="regular" value="large">large</label>
+            </div>
+          </div>
         </div>
-         <button type="submit" class="btn">Calculate my ticket</button>
-      </form>
-      <div id="results">
-        <h3>Your pizza will cost <span class="result-price"></span>.</h3>
+      <div class="row">
+        <div class="col-sm-6">
+          <div id="toppings">
+            <h3>Regular toppings:</h3>
+            <h5>$2 each on a regular pizza, or $2.50 on large</h5>
+          <div class="checkbox">
+            <label><input type="checkbox" class="regular" value="pepperoni">pepperoni</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" class="regular" value="olives">olives</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" class="regular" value="garlic">garlic</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" class="regular" value="sausage">sausage</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" class="regular" value="sundried-tomato">sundried tomato</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" class="regular" value="Jalapeno">Jalapeno</label>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
   </body>
 </html>
