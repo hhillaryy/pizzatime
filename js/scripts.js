@@ -15,9 +15,9 @@ Pizza.prototype.price = function() {
     sizePrice = 16;
   } else {}
   if (this.amount === "regular") {
-    toppingPrice = this.toppingnum * 1;
-  } else if (this.amount === "large") {
     toppingPrice = this.toppingnum * 2;
+  } else if (this.amount === "large") {
+    toppingPrice = this.toppingnum * 2.5;
   }
   pizzaPrice = sizePrice + toppingPrice;
   return pizzaPrice;

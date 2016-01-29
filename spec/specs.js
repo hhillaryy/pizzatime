@@ -7,6 +7,22 @@ describe("Pizza", function() {
 
   it("adds a method to calculate pizza price for any pizza", function() {
     var testPizza = new Pizza("regular",["pepperoni", "sausage", "olives", "garlic"]);
-    expect(testPizza.price()).to.equal(18);
+    expect(testPizza.price()).to.equal(22);
+  });
+  it("charges $14 for a regular pizza", function (){
+    var testPizza = new Pizza("regular",[]);
+    expect(testPizza.price()).to.equal(14);
+  });
+  it("charges $16 for a large pizza", function (){
+    var testPizza = new Pizza("large",[]);
+    expect(testPizza.price()).to.equal(16);
+  });
+  it("charges $2 per topping for a regular pizza", function() {
+    var testPizza = new Pizza("regular", ["pepperoni"]);
+    expect(testPizza.price()).to.equal(16);
+  });
+  it("charges $2.50 per topping for a large pizza", function() {
+    var testPizza = new Pizza("large", ["pepperoni"]);
+    expect(testPizza.price()).to.equal(18.5);
   });
 });
