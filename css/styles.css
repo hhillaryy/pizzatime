@@ -9,3 +9,7 @@ p {
 body {
   background-color: #ddedf0;
 }
+
+#result {
+  display: none;
+}

@@ -28,7 +28,7 @@
         <div class="col-sm-6">
           <div id="toppings">
             <h3>Regular toppings:</h3>
-            <h5>$2 each on a regular pizza, or $2.50 on large</h5>
+            <h5>$2 each on a regular pizza or $2.50 on large</h5>
           <div class="checkbox">
             <label><input type="checkbox" class="regular" value="pepperoni">pepperoni</label>
           </div>
@@ -51,8 +51,20 @@
       </div>
     </div>
   </div>
-     <button type="submit" class="btn btn-primary" id="pizza-add">Tell me my price</button>
+     <button type="submit" class="btn btn-primary" id="pizza-button">Order Complete</button>
 </form>
+  <div class="row">
+    <div class="col-md-6">
+      <div id="result">
+        <h2>Your Pizza(s):</h2>
+        <ul id="pizzas">
+
+        </ul>
+        <h3>Size: <span class="pizza-size"></span></h3>
+        <h3>Toppings: <span class="toppings-list"></span></h3>
+        <h3>Price: <span class="pizza-price"></span></h3>
+        <h3>Order total: <span class="order-total"></span></h3>
+    </div>
 </div>
 </body>
 </html>

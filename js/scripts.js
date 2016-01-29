@@ -4,7 +4,6 @@ function Pizza(amount, toppings) {
   this.toppingnum = this.toppings.length
 }
 
-
 Pizza.prototype.price = function() {
   var pizzaPrice = 0;
   var sizePrice = 0;
