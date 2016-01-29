@@ -1,8 +1,8 @@
-function Pizza(amount, toppings) {
+function Pizza(amount, topping, extraToppings) {
   this.amount = amount;
-  this.toppings = toppings;
+  this.topping = topping;
+  this.extraToppings = extraToppings;
 }
-  this.toppings = ["pepperoni", "sausage", "olives", "garlic"];
 
 Pizza.prototype.price = 14;
 
