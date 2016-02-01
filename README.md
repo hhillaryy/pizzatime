@@ -1,4 +1,4 @@
-# Vacation Generator site
+# Pizza Order Site
 HTML, CSS, Javascript, and jQuery exercise for Epicodus 1.29.2016
 ### by Hillary Hintzen
 
