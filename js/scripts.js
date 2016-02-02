@@ -33,14 +33,18 @@ var getToppings = function() {
 
 // need to write a doc ready jquery section that calls back to user inputs to the pizza constructor and generates and displays the result div. Having trouble figuring out how to get inputs from a checkbox too.
 $(document).ready(function () {
-  var newOrder = new Order(); // creates a new order for the page
   $("form#pizza-calculator").submit(function(event) {
     event.preventDefault();
     // gets input from page, including running the functions for the toppings
-    var size = $('input:checkbox[name=""]:checked').val();
+    var size = $('input:name="size"]:checked').val();
     var toppings = getToppings();
-    var crust = $('input:checkbox[name=""]:checked').val();
-})
-var newPizza = new Pizza(amount, toppings, price);
-    newOrder.total += newPizza.price()
-    return NewOrder;
+
+  });
+
+  var newPizza = new Pizza(amount, toppings);
+    var total = newPizza.price
+    "pizza-size".text(newPizza.amount);
+    "pizza-price".text(newPizza.price());
+    "toppings-list".text(newPizza.toppings)
+    "order-total".text(total);
+});
